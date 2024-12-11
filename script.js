@@ -40,13 +40,10 @@ document.getElementById('play-btn').addEventListener('click', function() {
 document.getElementById('export-btn').addEventListener('click', function() {
     const audio = document.getElementById('audio');
     const image = document.getElementById('image');
-
     if (audio.paused) {
         alert("La musique doit être en cours de lecture pour exporter la vidéo.");
         return;
     }
-
-    // Capture l'écran pendant que l'image vibre
     captureAndExportVideo(image, audio);
 });
 
